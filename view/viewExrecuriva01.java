@@ -38,7 +38,7 @@ public class viewExrecuriva01 {
                     System.out.println("O resto da divisão dos dois valores é: " + resultadob);
                     break;
 
-                case 3: //Falta ajustar o retorno da recursiva
+                case 3: 
                      int n = Integer.parseInt(JOptionPane.showInputDialog("Defina o tamanho so vetor:"));
                      int vetor [] = new int [n];
                      int cont = 0;
