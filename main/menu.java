@@ -15,12 +15,17 @@ import view.viewExrecuriva01;
 
         do {
             if (opc != 9){
-                opc = Integer.parseInt(JOptionPane.showInputDialog("Selecione qual atividade deseja visualizar: \n 1 - Lista A (sala) \n 2 - Lista B (Casa)  \n 9 - Fechar Menu"));
+                opc = Integer.parseInt(JOptionPane.showInputDialog("Selecione qual lista de atividade deseja visualizar: \n 1 - Lista Recursiva (sala) \n 2 - Lista Recursiva (Casa)  \n 9 - Fechar Menu"));
             }
 
             switch (opc){
                 case 1:
                    La.ListaA();
+                   break;
+
+                case 2:
+                    System.out.println("Lista B (Recursiva)- Em construção");
+                    break;
 
                 case 9:
                     JOptionPane.showMessageDialog(null, "PROGRAMA ENCERRADO!");  

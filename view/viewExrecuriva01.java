@@ -19,7 +19,7 @@ public class viewExrecuriva01 {
 
         do {
             if (opc != 9){
-                opc = Integer.parseInt(JOptionPane.showInputDialog("Selecione qual recursividade deseja executar: \n 1 - Multiplica dois valores \n 2 - Mostra resto \n 3 - N de pares do vetor \n 9 - Fechar Menu"));
+                opc = Integer.parseInt(JOptionPane.showInputDialog("Selecione qual recursividade deseja executar: \n 1 - Multiplica dois valores \n 2 - Mostra resto \n 3 - N de pares do vetor \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
             }
 
             switch (opc){
@@ -50,14 +50,18 @@ public class viewExrecuriva01 {
                      System.out.println("A quantidades de numeros pares no vetor é: " + resultadoc);
                      break;
 
+                case 8: 
+                    JOptionPane.showMessageDialog(null, "Retornando ao Menu Principal!");  
+                    break;
+
                 case 9:
-                    JOptionPane.showMessageDialog(null, "PROGRAMA ENCERRADO!");  
+                    JOptionPane.showMessageDialog(null, "Programa Encerrado!");  
                     System.exit(0);
                     break;
 
                     default: JOptionPane.showMessageDialog(null, "OPCAO INVALIDA!");
             }
-         }while(opc !=9);
+         }while(opc !=9 && opc !=8);
     }
 
 }
