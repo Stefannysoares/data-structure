@@ -5,7 +5,12 @@ import controller.Exrecursiva01B;
 import controller.Exrecursiva01C;
 
 public class viewExrecuriva01 {
-    public static void main (String [] Args){
+
+    public viewExrecuriva01(){
+        super();
+    }
+
+    public void  ListaA (){
         Exrecursiva01A opA = new Exrecursiva01A();
         Exrecursiva01B opB = new Exrecursiva01B();
         Exrecursiva01C opC = new Exrecursiva01C();
@@ -36,11 +41,12 @@ public class viewExrecuriva01 {
                 case 3: //Falta ajustar o retorno da recursiva
                      int n = Integer.parseInt(JOptionPane.showInputDialog("Defina o tamanho so vetor:"));
                      int vetor [] = new int [n];
+                     int cont = 0;
                      for (int i =0; i < n; i++){
                         vetor[i] = Integer.parseInt(JOptionPane.showInputDialog("Insira um valor inteiro e positivo: "));
                      }
                      int f =0;
-                     int resultadoc =opC.ParVetor(vetor, f, n);
+                     int resultadoc =opC.ParVetor(vetor, f, n, cont);
                      System.out.println("A quantidades de numeros pares no vetor é: " + resultadoc);
                      break;
 

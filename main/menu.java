@@ -5,10 +5,11 @@
 
 package main; 
 import javax.swing.JOptionPane;
-//import view.viewExrecuriva01;
+import view.viewExrecuriva01;
+
  public class menu{
      public static void main (String [] args ){
-       // viewExrecuriva01 ListaA = new viewExrecuriva01();
+       viewExrecuriva01 La = new viewExrecuriva01();
 
         int opc = 0;
 
@@ -19,7 +20,7 @@ import javax.swing.JOptionPane;
 
             switch (opc){
                 case 1:
-                   // int r = ListaA.viewExrecuriva01();
+                   La.ListaA();
 
                 case 9:
                     JOptionPane.showMessageDialog(null, "PROGRAMA ENCERRADO!");  

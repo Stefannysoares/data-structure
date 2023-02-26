@@ -9,19 +9,25 @@ public class Exrecursiva01C {
         super();
     }
     
-    int c =0;
-    public int ParVetor (int vet [], int i, int t){
+    
+    public int ParVetor (int vet [], int i, int t, int c){
         
-        if (vet[i]< t){
+        if (i == t){
             return c; //Ainda esta retornando zero Preciso arrumar
         }
             
        else if (vet[i]%2==0){
-            c=c+1;
-            return ParVetor(vet, i+1, t);
+          System.out.println("indice :"+i);
+          System.out.println("contpar:"+c);
+          System.out.println("numero vetor: "+vet[i]);
+            return  ParVetor(vet, i+1, t, c+1);
+            
        }   
         else
-             return ParVetor(vet, i+1, t);
+             //System.out.println("indice :"+i);
+             //System.out.println("contpar:"+c);
+             //System.out.println("numero vetor: "+vet[i]);
+            return  ParVetor(vet, i+1, t, c);
 
     }
 
