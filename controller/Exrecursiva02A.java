@@ -12,14 +12,11 @@ public class Exrecursiva02A {
 
     public int fat (int a ){
 
-        if (a > 1){
-            System.out.println("o valor de a: " + a);
-            return a = a* fat(a-1);
-        }
+        if (a > 1) // Ponto de parada enquanto a for maior que 1
+            return a = a* fat(a-1); // chamada da recursiva 
 
-        else {
+        else 
             return 1;
-        }
             
     }
 
