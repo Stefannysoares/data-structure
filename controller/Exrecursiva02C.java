@@ -14,14 +14,14 @@ public class Exrecursiva02C {
 
     public int nInt (int n, int m){
 
-        if (n<m){// ponto de parada
+        if (n<m){ //ponto de parada
             m = m/10;
             
             String s = Integer.toString(m);
             int dig = s.length(); 
             return dig;
         }
-        if (n / m >= 1){ // condição para a chamada da próxima recursiva
+        if (n / m >= 1){ //condição para a chamada da próxima recursiva
             return nInt(n, m*10);
 
         }

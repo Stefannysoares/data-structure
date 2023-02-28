@@ -12,7 +12,7 @@ public class Exrecursiva02D {
     }
     public String contrario (String word){
         
-        if (word.length() <= 1) { // caso base da recursão
+        if (word.length() <= 1) { // condição de parada
             return word;
         } else {
             char primeiro = word.charAt(0); // pega o primeiro caractere
