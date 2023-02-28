@@ -2,8 +2,8 @@ package view;
 import javax.swing.JOptionPane;
 import controller.Exrecursiva02A;
 import controller.Exrecursiva02B;
-//import controller.Exrecursiva02C;
-//import controller.Exrecursiva02D;
+import controller.Exrecursiva02C;
+import controller.Exrecursiva02D;
 
 
 public class viewExrecursiva02 {
@@ -16,15 +16,15 @@ public class viewExrecursiva02 {
 
         Exrecursiva02A opA = new Exrecursiva02A();
         Exrecursiva02B opB = new Exrecursiva02B();
-      //  Exrecursiva02C opC = new Exrecursiva02C();
-      //  Exrecursiva02D opD = new Exrecursiva02D();
+        Exrecursiva02C opC = new Exrecursiva02C();
+        Exrecursiva02D opD = new Exrecursiva02D();
 
         int opc = 0;
 
         do {
 
             if (opc != 9){
-                opc = Integer.parseInt(JOptionPane.showInputDialog("Lista de Exercicios 02 \n Selecione qual recursividade deseja executar: \n 1 - Fatorial de N \n 2 - aguarde \n 3 - aguarde \n 4 - aguarde \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
+                opc = Integer.parseInt(JOptionPane.showInputDialog("Lista de Exercicios 02 \n Selecione qual recursividade deseja executar: \n 1 - Fatorial de N \n 2 - Negativo Vetor \n 3 - n Digitos \n 4 - Contraro \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
                 
             }
 
@@ -50,11 +50,16 @@ public class viewExrecursiva02 {
                     break;
 
                 case 3:
-                    // Em construção
+                    int I = Integer.parseInt(JOptionPane.showInputDialog("Insira um valor inteiro e positivo:"));
+                    int max = 10;
+                    int rC = opC.nInt(I, max);
+                    System.out.println("O número "+ I + " possui " + rC + " dígitos.");
                     break;
 
                 case 4:
-                    // Em construção
+                    String p = JOptionPane.showInputDialog("Insira uma palavra: ");
+                    String rD = opD.contrario(p);
+                    System.out.println("A palavra ao contrário é: "+rD);
                     break;
                      
                 case 8: 

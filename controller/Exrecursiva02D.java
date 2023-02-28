@@ -11,6 +11,14 @@ public class Exrecursiva02D {
         super();
     }
     public String contrario (String word){
-        return word;
+        
+        if (word.length() <= 1) { // caso base da recursão
+            return word;
+        } else {
+            char primeiro = word.charAt(0); // pega o primeiro caractere
+            String resto = word.substring(1); // pega o restante da string
+            String invertido = contrario(resto); // chama recursivamente a função para o restante da string
+            return invertido + primeiro; // concatena o resultado invertido com o primeiro caractere
+        }
     }
 }

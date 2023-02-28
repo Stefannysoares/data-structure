@@ -8,8 +8,23 @@ public class Exrecursiva02C {
     public Exrecursiva02C (){
         super ();
     }
+   // int numero = 12345678;
+   // String s = Integer.toString(numero);
+   // System.out.println(s.length());
 
-    public int nInt (int n){
-        return n;
+    public int nInt (int n, int m){
+        if (n<m){
+            m = m/10;
+            
+            String s = Integer.toString(m);
+            int dig = s.length(); 
+            return dig;
+        }
+        if (n / m >= 1){
+            return nInt(n, m*10);
+
+        }
+        return 0;
+        
     }
 }
