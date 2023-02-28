@@ -5,11 +5,13 @@
 
 package main; 
 import javax.swing.JOptionPane;
-import view.viewExrecuriva01;
+import view.viewExrecursiva01;
+import view.viewExrecursiva02;
 
  public class menu{
      public static void main (String [] args ){
-       viewExrecuriva01 La = new viewExrecuriva01();
+       viewExrecursiva01 La = new viewExrecursiva01();
+       viewExrecursiva02 Lb = new viewExrecursiva02();
 
         int opc = 0;
 
@@ -24,7 +26,7 @@ import view.viewExrecuriva01;
                    break;
 
                 case 2:
-                    System.out.println("Lista B (Recursiva)- Em construção");
+                    Lb.ListaB();
                     break;
 
                 case 9:

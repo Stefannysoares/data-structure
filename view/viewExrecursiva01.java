@@ -4,9 +4,9 @@ import controller.Exrecursiva01A;
 import controller.Exrecursiva01B;
 import controller.Exrecursiva01C;
 
-public class viewExrecuriva01 {
+public class viewExrecursiva01 {
 
-    public viewExrecuriva01(){
+    public viewExrecursiva01(){
         super();
     }
 
@@ -19,7 +19,7 @@ public class viewExrecuriva01 {
 
         do {
             if (opc != 9){
-                opc = Integer.parseInt(JOptionPane.showInputDialog("Selecione qual recursividade deseja executar: \n 1 - Multiplica dois valores \n 2 - Mostra resto \n 3 - N de pares do vetor \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
+                opc = Integer.parseInt(JOptionPane.showInputDialog("Lista de Exercicios 01 \n Selecione qual recursividade deseja executar: \n 1 - Multiplica dois valores \n 2 - Mostra resto \n 3 - N de pares do vetor \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
             }
 
             switch (opc){
