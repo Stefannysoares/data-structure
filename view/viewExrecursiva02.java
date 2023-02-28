@@ -24,7 +24,7 @@ public class viewExrecursiva02 {
         do {
 
             if (opc != 9){
-                opc = Integer.parseInt(JOptionPane.showInputDialog("Lista de Exercicios 02 \n Selecione qual recursividade deseja executar: \n 1 - Fatorial de N \n 2 - Negativo Vetor \n 3 - n Digitos \n 4 - Contraro \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
+                opc = Integer.parseInt(JOptionPane.showInputDialog("Lista de Exercicios 02 \n Selecione qual recursividade deseja executar: \n 1 - Fatorial de N \n 2 - Negativo Vetor \n 3 - n Digitos \n 4 - Contrario \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
                 
             }
 
