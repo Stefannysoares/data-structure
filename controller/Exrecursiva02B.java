@@ -11,11 +11,11 @@ public class Exrecursiva02B {
     }
 
     public int nVet (int vet [], int i, int t, int c){
-        if (i == t){
+        if (i == t){ //ponto de parada (quando o contador do indice do vetor for igual ao tamanho do vetor)
             return c; 
         }
             
-       else if (vet[i] < 0){
+       else if (vet[i] < 0){  //condição para a chamada da próxima recursiva
             return  nVet (vet, i+1, t, c+1);
             
        }   
