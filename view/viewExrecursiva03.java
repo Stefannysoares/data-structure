@@ -4,6 +4,8 @@ import controller.Exrecursiva03A;
 import controller.Exrecursiva03B;
 import controller.Exrecursiva03C;
 import controller.Exrecursiva03D;
+import controller.Exrecursiva03E;
+import controller.Exrecursiva03F;
 
 public class viewExrecursiva03 {
     
@@ -16,13 +18,15 @@ public class viewExrecursiva03 {
         Exrecursiva03B opB = new Exrecursiva03B();
         Exrecursiva03C opC = new Exrecursiva03C();
         Exrecursiva03D opD = new Exrecursiva03D();
+        Exrecursiva03E opE = new Exrecursiva03E();
+        Exrecursiva03F opF = new Exrecursiva03F();
 
         int opc = 0;
 
         do {
 
             if (opc != 9){
-                opc = Integer.parseInt(JOptionPane.showInputDialog("Lista de Exercicios 03 \n Selecione qual recursividade deseja executar: \n 1 - Soma nNaturias \n 2 - Converte Binario \n 3 - Somatória N \n 4 - Consulta f em N \n 5 - Em construção \n 6 - Em construção \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
+                opc = Integer.parseInt(JOptionPane.showInputDialog("Lista de Exercicios 03 \n Selecione qual recursividade deseja executar: \n 1 - Soma nNaturias \n 2 - Converte Binario \n 3 - Somatória N \n 4 - Consulta f em N \n 5 - I de fiboancci \n 6 - sSoma Sequencia fat \n 8 - Retornar ao Menu Principal \n 9 - Fechar Programa"));
                 
             }
 
@@ -73,11 +77,21 @@ public class viewExrecursiva03 {
                 break;
 
                 case 5:
-                    System.out.println("Em construção!");
+                    int f = 21;
+                    while (f > 20 || f<0){
+                        f = Integer.parseInt(JOptionPane.showInputDialog("Insira um valor entre 0 e 20: "));
+                    }
+                    int rE = opE.fibonacci(f);
+                    System.out.println("A numeração correpondente a posição " + f + " na sequencia fibonacci é: " + rE);
                 break;
 
                 case 6:
-                    System.out.println("Em construção!");
+                    int e = 11; 
+                    while (e >10 || e <0){
+                        e = Integer.parseInt(JOptionPane.showInputDialog("Insira um valor entre 0 e 10: "));
+                    }
+                    double rF = opF.SomaFat(e);
+                    System.out.println("O resulltado da soma da sequencia é: " + rF);
                 break;
 
                 case 8: 

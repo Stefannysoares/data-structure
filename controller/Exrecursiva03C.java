@@ -1,8 +1,7 @@
 /* Exercicio C - Atividade para casa (Semana 02) - Lista (sala)
  * Aluna Stefanny Soares Conceição - 3º ADS Noite/2023
  * Matéria: Estrutura de Dados / Professor: Leandro Colevati
- * Descrição da classe: uma aplicação em Java que tenha uma função recursiva que,
-recebendo um número inteiro (N), apresente a saída da somatória.
+ * Descrição da classe: uma aplicação em Java que tenha uma função recursiva que, recebendo um número inteiro (N), apresente a saída da somatória.
  */
 package controller;
 
