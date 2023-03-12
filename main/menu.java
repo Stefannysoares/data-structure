@@ -8,18 +8,19 @@ import javax.swing.JOptionPane;
 import view.viewExrecursiva01;
 import view.viewExrecursiva02;
 import view.viewExrecursiva03;
+import view.viewOrdenacao01;
 
  public class menu{
      public static void main (String [] args ){
        viewExrecursiva01 La = new viewExrecursiva01();
        viewExrecursiva02 Lb = new viewExrecursiva02();
        viewExrecursiva03 Lc = new viewExrecursiva03();
-
+        viewOrdenacao01  Ld = new viewOrdenacao01();
         int opc = 0;
 
         do {
             if (opc != 9){
-                opc = Integer.parseInt(JOptionPane.showInputDialog("Selecione qual lista de atividade deseja visualizar: \n 1 - Lista Seman 01 (sala) \n 2 - Lista Semana 01 (Casa) \n 3 - Lista Semana 02 (Sala)  \n 9 - Fechar Menu"));
+                opc = Integer.parseInt(JOptionPane.showInputDialog("Selecione qual lista de atividade deseja visualizar: \n 1 - Lista Seman 01 (sala) \n 2 - Lista Semana 01 (Casa) \n 3 - Lista Semana 02 (Sala)\n 4 - Lista Ordenacao  \n 9 - Fechar Menu"));
             }
 
             switch (opc){
@@ -33,6 +34,10 @@ import view.viewExrecursiva03;
 
                 case 3:
                     Lc.ListaC();
+                    break;
+
+                case 4:
+                    Ld.ListaE();
                     break;
 
                 case 9:
